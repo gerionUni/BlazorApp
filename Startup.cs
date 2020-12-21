@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using BlazorApp.Data;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace BlazorApp
 {
     public class Startup
@@ -32,13 +33,15 @@ namespace BlazorApp
             services.AddDbContext<BlazorUsersDbContext>(options =>
             {
                 options.UseSqlite("Data Source = BlazorUsers.db");
+
             });
+
             //services.AddScoped<BlazorUsersDbContext>();
             services.AddScoped<BlazorUsersServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, BlazorUsersDbContext dataContext)
         {
             if (env.IsDevelopment())
             {
@@ -50,7 +53,7 @@ namespace BlazorApp
             }
 
             app.UseStaticFiles();
-
+            dataContext.Database.Migrate();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
