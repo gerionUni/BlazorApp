@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerio\\Source\\Repos\\BlazorApp\\BlazorApp.csproj": {}
+    "C:\\Users\\gerio\\source\\repos\\BlazorApp\\BlazorApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerio\\Source\\Repos\\BlazorApp\\BlazorApp.csproj": {
+    "C:\\Users\\gerio\\source\\repos\\BlazorApp\\BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerio\\Source\\Repos\\BlazorApp\\BlazorApp.csproj",
+        "projectUniqueName": "C:\\Users\\gerio\\source\\repos\\BlazorApp\\BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "C:\\Users\\gerio\\Source\\Repos\\BlazorApp\\BlazorApp.csproj",
+        "projectPath": "C:\\Users\\gerio\\source\\repos\\BlazorApp\\BlazorApp.csproj",
         "packagesPath": "C:\\Users\\gerio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerio\\Source\\Repos\\BlazorApp\\obj\\",
+        "outputPath": "C:\\Users\\gerio\\source\\repos\\BlazorApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
